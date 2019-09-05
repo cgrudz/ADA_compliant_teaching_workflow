@@ -48,6 +48,17 @@
       margin-bottom:15px;
   }
   
+  h1+p {
+      /*subtitle*/
+      color: #000000;
+      font-size: 20px;
+      line-height: 2em;
+      margin-top: 0.5em;
+      margin-bottom: 0em !important;
+      text-align: center;
+      font-weight: bold;
+  }
+  
   /* Subheadings */
   h2 {
       color: #000000;
@@ -76,10 +87,10 @@
   /* Links */
   a {
       text-decoration: none;
-      color: #397249;
+      color: #2980d6;
   }
   a:hover, a:active {
-      background-color: #397249;
+      background-color: #2980d6;
       color: #FFFFFF;
       text-decoration: none;
       text-shadow: 1px 1px 1px #333;
@@ -94,19 +105,32 @@
       width: 100%;
   }
   
+  /* Make div for blank space for answers in between questions 
+   * Include your own necessary amount of blank space in the 
+   * height variable.*/
   .answer_div {
       width:100%;
       height:2in;
       float:left;
   }
   
+  /* Define page breaks in document for printing purposes
+   * Include the following line
+   * <div class="pagebreak"> </div>
+   * in order to initiate page breaks for document printing */
+  @media print {
+      .pagebreak { 
+      page-break-before: always; 
+      padding-top:1in;
+  } 
+  }
+  
   </style>
 </head>
 <body>
 <h1 id="homework-2">Homework 2</h1>
-<h2 id="stat-757-section-1001">STAT 757 – Section 1001</h2>
-<h3 id="instructor-colin-grudzien">Instructor: Colin Grudzien</h3>
-<h3 id="due-09132019">Due: 09/13/2019</h3>
+<p>STAT 757 – Section 1001 <br> Instructor: Colin Grudzien</p>
+<h2 id="due-09132019">Due: 09/13/2019</h2>
 <h2 id="instructions">Instructions</h2>
 <blockquote>
 You may work with others on these problems but you must turn in your own work.<br />
@@ -142,10 +166,10 @@ The estimated regression function always passes through the point defined by the
 <h4 id="install-the-library-faraway-in-the-r-environment.-then-proceed-to-analyze-the-following-data-sets-in-this-library">Install the library “Faraway” in the R environment. Then proceed to analyze the following data sets in this library:</h4>
 <ol>
 <li>
-The dataset “teengamb” concerns a study of teenage gambling in Britain. Make a numerical and graphical summary of the data, commenting on any features that you find interesting. Limit the output you present to a quantity that a busy reader would find sufficient to get a basic understanding of the data.
+The dataset <code>teengamb</code> concerns a study of teenage gambling in Britain. Make a numerical and graphical summary of the data, commenting on any features that you find interesting. Limit the output you present to a quantity that a busy reader would find sufficient to get a basic understanding of the data.
 </li>
 <li>
-The dataset “uswages” is drawn as a sample from the Current Population Survey in 1988. Make a numerical and graphical summary of the data as in the previous question.
+The dataset <code>uswages</code> is drawn as a sample from the Current Population Survey in 1988. Make a numerical and graphical summary of the data as in the previous question.
 </li>
 </ol>
 </body>

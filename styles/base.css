@@ -31,6 +31,17 @@ h1 {
     margin-bottom:15px;
 }
 
+h1+p {
+    /*subtitle*/
+    color: #000000;
+    font-size: 20px;
+    line-height: 2em;
+    margin-top: 0.5em;
+    margin-bottom: 0em !important;
+    text-align: center;
+    font-weight: bold;
+}
+
 /* Subheadings */
 h2 {
     color: #000000;
@@ -59,10 +70,10 @@ blockquote {
 /* Links */
 a {
     text-decoration: none;
-    color: #397249;
+    color: #2980d6;
 }
 a:hover, a:active {
-    background-color: #397249;
+    background-color: #2980d6;
     color: #FFFFFF;
     text-decoration: none;
     text-shadow: 1px 1px 1px #333;
@@ -77,10 +88,24 @@ table {
     width: 100%;
 }
 
+/* Make div for blank space for answers in between questions 
+ * Include your own necessary amount of blank space in the 
+ * height variable.*/
 .answer_div {
     width:100%;
     height:2in;
     float:left;
+}
+
+/* Define page breaks in document for printing purposes
+ * Include the following line
+ * <div class="pagebreak"> </div>
+ * in order to initiate page breaks for document printing */
+@media print {
+    .pagebreak { 
+    page-break-before: always; 
+    padding-top:1in;
+} 
 }
 
 </style>

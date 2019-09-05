@@ -29,14 +29,34 @@ This project is a fork of the <a href="https://github.com/mszep/pandoc_resume" t
 the work flow, many aspects of the CSS and the Pandoc makefile.  Please see the <a href="LICENSE" target="blank">LICENCE</a>. 
 
 ## Instructions
+
+
+### Installation
+
+#### Requirements
+
+* <a href="https://pandoc.org/installing.html" targeti="blank">pandoc 2.x</a>
+    * 1.x is deprecated
+
+
+#### How to download
+
 ```bash
 git clone https://github.com/cgrudz/ADA_compliant_teaching_workflow
+```
+
+Or via the Github GUI.
+
+#### How to use
+
+```bash
 cd ADA_compliant_teaching_workflow 
 vim markdown/"some_template.md"   # choose a template to work with and fill values
 make  # this will run pandoc with Mathjax settings, outputting to HTML
 ```
 The make file will produce HTML documents (with MathJax equations from LaTeX) from all files found in the "markdown" directory.  The output HTML documents will be
-saved to the "output" directory.
+saved to the "output" directory.  This should work on standard Linux and Unix distributions.  
+Windows users can use the command line with <a href="https://docs.microsoft.com/en-us/windows/wsl/install-win10">Bash on Windows</a>
 
 The preset values can be edited in the Makefile as
 
@@ -54,11 +74,7 @@ the documents with note page formatting.  STYLE variable will be the chosen css 
 * <a href="https://pandoc.org/installing.html" targeti="blank">pandoc 2.x</a>
     * 1.x is deprecated
 
-
-
-
 Last tested on the above versions and that's not to say the later versions won't work. Please try to use the latest versions when possible.
-
 Check if the dependencies are up to date.
 
 ```
@@ -74,3 +90,11 @@ e.g. for Debian / Ubuntu
 wget https://github.com/jgm/pandoc/releases/download/2.2.1/pandoc-2.2.1-1-amd64.deb
 sudo dpkg -i pandoc-2.2.1-1-amd64.deb
 ```
+
+### How to use
+
+Write new documents or edit existing templates in the ".md" file type wihtin the IN_DIR.
+
+ * __Q:__ What is ".md" file type?
+
+

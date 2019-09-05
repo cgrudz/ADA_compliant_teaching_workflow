@@ -1,8 +1,8 @@
 # Homework 2 
+STAT 757 -- Section 1001 <br>
+Instructor: Colin Grudzien
 
-## STAT 757 -- Section 1001
-### Instructor: Colin Grudzien
-### Due: 09/13/2019
+## Due: 09/13/2019
 
 ## Instructions
 <blockquote>
@@ -39,10 +39,10 @@
 #### Install the library "Faraway" in the R environment.  Then proceed to analyze the following data sets in this library:
 
 <ol>
-  <li> The dataset "teengamb" concerns a study of teenage gambling in Britain. Make a numerical and graphical summary of the data, commenting on any 
+  <li> The dataset ``teengamb`` concerns a study of teenage gambling in Britain. Make a numerical and graphical summary of the data, commenting on any 
   features that you find interesting. Limit the output you present to a quantity that a busy reader would find sufficient to get a basic understanding of the data.
   </li>
-  <li> The dataset "uswages" is drawn as a sample from the Current Population Survey in 1988. Make a numerical and graphical summary of the data as in the previous
+  <li> The dataset ``uswages`` is drawn as a sample from the Current Population Survey in 1988. Make a numerical and graphical summary of the data as in the previous
 question.
   </li>
 </ol>
