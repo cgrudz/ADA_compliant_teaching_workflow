@@ -10,14 +10,25 @@ Instructor: Colin Grudzien
 
 ## Instructor information:
 
------------------- --------- ----------------------------------
-Contact            Office    Hours
------------------- --------- ----------------------------------
-CGrudzien@unr.edu  DMSC 218  Tu 12:00 - 1:30, We 15:30 - 17:00,
-
-  (775) 784-7554             or by appointment
----------------------------- -------------------------------------
-
+<table class="minimalistBlack">
+<thead>
+<tr>
+  <th>Contact</th>
+  <th>Office</th>    
+  <th>Hours</th>
+</tr>
+</thead>
+<tr>
+  <td>CGrudzien@unr.edu</td>
+  <td>DMSC 218 </td>
+  <td>Tu 12:00 - 1:30, We 15:30 - 17:00,</td>
+</tr>
+<tr>
+  <td>(775) 784-7554</td>
+  <td> </td>
+  <td> or by appointment</td>
+</tr>
+</table>
 ## Help & Questions
 
 Students can see the instructor without appointment during office hours.  Outside of office hours, the best way to contact the instructor is via email.  Emails received before 16:00 will usually get a response the same day.  Emails received after 16:00 are not guaranteed a same-day response.  Longer questions will not be answered by email and will be directed to appointments or office hours.
@@ -103,39 +114,65 @@ The assignment schedule is tentative, and will be subject to change.  The up-to-
 
 Final grades will be calculated according to the scores from attendance, homework, midterms, and the project, each weighted as follows:  
 
-------------------------- --------------------------
-__Category__              __Percent of final grade__
-
-------------------------- --------------------------
-Attendance and warm-ups       $10\%$
-
-Homework assignments          $10\%$ 
-
-Midterm 1                     $25\%$ 
-
-Midterm 2                     $25\%$ 
-
-Final project                 $30\%$ 
-
-------------------------- --------------------------
-
+<table class="minimalistBlack">
+<thead>
+<tr>
+  <th>Category</th>
+  <th>Percent of final grade</th>
+</tr>
+</thead>
+<tr>
+  <td>Attendance and warm-ups</td>
+  <td> $10\%$</td>
+</tr>
+<tr>
+  <td>Homework assignments</td>
+  <td>$10\%$ </td>
+</tr>
+<tr>
+  <td>Midterm 1</td>
+  <td> $25\%$ </td>
+<tr>
+  <td>Midterm 2</td>
+  <td>$25\%$ </td>
+</tr>
+<tr>
+  <td>Final project</td>
+  <td>$30\%$</td> 
+</tr>
+</table>
 
 The final letter grade will be assigned according to the weighted score as in the following table:
 
------------------------- -----------------------------
-__Weighted score $x$__   __Final letter grade__ 
------------------------- -----------------------------
-$90\% \leq x \leq 100\%$     A
+<table class="minimalistBlack">
+<thead>
+<tr>
+  <th>Weighted score $x$</th>
+  <th>Final letter grade</th>
+</tr> 
+</thead>
+<tr>
+  <td>$90\% \leq x \leq 100\%$</td>    
+  <td> A</td>
+</tr>
+<tr>
+  <td>$80\% \leq x < 90\%$</td>
+  <td> B</td>
+</tr>
+<tr>
+  <td>$70\% \leq x < 80\%$</td>
+  <td> C</td>
+</tr>
+<tr>
+  <td>$60\% \leq x < 70\%$</td>
+  <td> D</td>
+</tr>
+<tr>
+  <td>$0 \% \leq x < 60\%$</td>
+  <td>F</td>
+</tr>
+</table>
 
-$80\% \leq x < 90\%$         B
-
-$70\% \leq x < 80\%$         C
-
-$60\% \leq x < 70\%$         D
-
-$0 \% \leq x < 60\%$         F
-
------------------------- -----------------------------
 
 
 ## Late policy and exceptions

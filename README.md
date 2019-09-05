@@ -163,8 +163,7 @@ to PDF immediately before this element. __Note__ this will automatically enforce
 but __you must manually set where you want a break at the bottom of the page__.  For my handouts, quizzes, etc, I feel OK just
 approximating it.
 
-#### Q: How do I make space in between elements, such as blocks of text and math, to give problems with room to hand fill
-answers in the printed sheet?
+#### Q: How do I make space in between elements to give, e.g., problems with room to hand fill answers in the printed sheet?
 
 Include an "answers_div" as follows
 

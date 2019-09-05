@@ -103,6 +103,44 @@
   
   table {
       width: 100%;
+  	border-collapse:collapse;
+  	border-spacing:0;
+  	display:table
+  }
+  
+  table.minimalistBlack {
+    border: 3px solid #000000;
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+  }
+  table.minimalistBlack td, table.minimalistBlack th {
+    padding: 5px 4px;
+  }
+  table.minimalistBlack tbody td {
+    font-size: 15px;
+  }
+  table.minimalistBlack thead {
+    background: #CFCFCF;
+    background: -moz-linear-gradient(top, #dbdbdb 0%, #d3d3d3 66%, #CFCFCF 100%);
+    background: -webkit-linear-gradient(top, #dbdbdb 0%, #d3d3d3 66%, #CFCFCF 100%);
+    background: linear-gradient(to bottom, #dbdbdb 0%, #d3d3d3 66%, #CFCFCF 100%);
+    border-bottom: 3px solid #000000;
+  }
+  table.minimalistBlack thead th {
+    font-size: 15px;
+    font-weight: bold;
+    color: #000000;
+    text-align: left;
+  }
+  table.minimalistBlack tfoot {
+    font-size: 14px;
+    font-weight: bold;
+    color: #000000;
+    border-top: 3px solid #000000;
+  }
+  table.minimalistBlack tfoot td {
+    font-size: 14px;
   }
   
   /* Make div for blank space for answers in between questions 
@@ -125,6 +163,8 @@
   } 
   }
   
+  
+  
   </style>
 </head>
 <body>
@@ -135,33 +175,45 @@
 <h3 id="class-times-fall-2019-tuthr-1030-am---1145-am">Class times: Fall 2019 – TuThr 10:30 AM - 11:45 AM</h3>
 <h3 id="final-exam-tuesday-december-17-950---1150-am">Final exam: Tuesday December 17, 9:50 - 11:50 AM</h3>
 <h2 id="instructor-information">Instructor information:</h2>
-<table style="width:89%;">
-<colgroup>
-<col style="width: 26%" />
-<col style="width: 13%" />
-<col style="width: 48%" />
-</colgroup>
+<table class="minimalistBlack">
 <thead>
-<tr class="header">
-<th style="text-align: left;">Contact</th>
-<th style="text-align: left;">Office</th>
-<th style="text-align: left;">Hours</th>
+<tr>
+<th>
+Contact
+</th>
+<th>
+Office
+</th>
+<th>
+Hours
+</th>
 </tr>
 </thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">CGrudzien@unr.edu</td>
-<td style="text-align: left;">DMSC 218</td>
-<td style="text-align: left;">Tu 12:00 - 1:30, We 15:30 - 17:00,</td>
+<tr>
+<td>
+CGrudzien@unr.edu
+</td>
+<td>
+DMSC 218
+</td>
+<td>
+Tu 12:00 - 1:30, We 15:30 - 17:00,
+</td>
 </tr>
-<tr class="even">
-<td style="text-align: left;">(775) 784-7554</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">or by appointment</td>
+<tr>
+<td>
+<ol start="775" type="1">
+<li>784-7554
+</td>
+<td>
+</td>
+<td>
+or by appointment
+</td>
 </tr>
-</tbody>
 </table>
-<h2 id="help-questions">Help &amp; Questions</h2>
+<h2 id="help-questions">Help &amp; Questions</h2></li>
+</ol>
 <p>Students can see the instructor without appointment during office hours. Outside of office hours, the best way to contact the instructor is via email. Emails received before 16:00 will usually get a response the same day. Emails received after 16:00 are not guaranteed a same-day response. Longer questions will not be answered by email and will be directed to appointments or office hours.</p>
 <h2 id="course-description">Course description</h2>
 <p>This course covers techniques and applications of regression analysis, including inference and model diagnostics. The main goal is to empower learners to confidently perform and communicate a regression analysis of real data to address research questions in a reproducible framework.</p>
@@ -226,74 +278,109 @@
 </div>
 <h2 id="final-grades">Final grades</h2>
 <p>Final grades will be calculated according to the scores from attendance, homework, midterms, and the project, each weighted as follows:</p>
-<table style="width:74%;">
-<colgroup>
-<col style="width: 36%" />
-<col style="width: 37%" />
-</colgroup>
+<table class="minimalistBlack">
 <thead>
-<tr class="header">
-<th style="text-align: left;"><strong>Category</strong></th>
-<th><strong>Percent of final grade</strong></th>
+<tr>
+<th>
+Category
+</th>
+<th>
+Percent of final grade
+</th>
 </tr>
 </thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">Attendance and warm-ups</td>
-<td><span class="math inline">\(10\%\)</span></td>
+<tr>
+<td>
+Attendance and warm-ups
+</td>
+<td>
+<span class="math inline">\(10\%\)</span>
+</td>
 </tr>
-<tr class="even">
-<td style="text-align: left;">Homework assignments</td>
-<td><span class="math inline">\(10\%\)</span></td>
+<tr>
+<td>
+Homework assignments
+</td>
+<td>
+<span class="math inline">\(10\%\)</span>
+</td>
 </tr>
-<tr class="odd">
-<td style="text-align: left;">Midterm 1</td>
-<td><span class="math inline">\(25\%\)</span></td>
+<tr>
+<td>
+Midterm 1
+</td>
+<td>
+<span class="math inline">\(25\%\)</span>
+</td>
+<tr>
+<td>
+Midterm 2
+</td>
+<td>
+<span class="math inline">\(25\%\)</span>
+</td>
 </tr>
-<tr class="even">
-<td style="text-align: left;">Midterm 2</td>
-<td><span class="math inline">\(25\%\)</span></td>
+<tr>
+<td>
+Final project
+</td>
+<td>
+<span class="math inline">\(30\%\)</span>
+</td>
 </tr>
-<tr class="odd">
-<td style="text-align: left;">Final project</td>
-<td><span class="math inline">\(30\%\)</span></td>
-</tr>
-</tbody>
 </table>
 <p>The final letter grade will be assigned according to the weighted score as in the following table:</p>
-<table style="width:76%;">
-<colgroup>
-<col style="width: 34%" />
-<col style="width: 41%" />
-</colgroup>
+<table class="minimalistBlack">
 <thead>
-<tr class="header">
-<th style="text-align: left;"><strong>Weighted score <span class="math inline">\(x\)</span></strong></th>
-<th style="text-align: left;"><strong>Final letter grade</strong></th>
+<tr>
+<th>
+Weighted score <span class="math inline">\(x\)</span>
+</th>
+<th>
+Final letter grade
+</th>
 </tr>
 </thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;"><span class="math inline">\(90\% \leq x \leq 100\%\)</span></td>
-<td style="text-align: left;">A</td>
+<tr>
+<td>
+<span class="math inline">\(90\% \leq x \leq 100\%\)</span>
+</td>
+<td>
+A
+</td>
 </tr>
-<tr class="even">
-<td style="text-align: left;"><span class="math inline">\(80\% \leq x &lt; 90\%\)</span></td>
-<td style="text-align: left;">B</td>
+<tr>
+<td>
+<span class="math inline">\(80\% \leq x &lt; 90\%\)</span>
+</td>
+<td>
+B
+</td>
 </tr>
-<tr class="odd">
-<td style="text-align: left;"><span class="math inline">\(70\% \leq x &lt; 80\%\)</span></td>
-<td style="text-align: left;">C</td>
+<tr>
+<td>
+<span class="math inline">\(70\% \leq x &lt; 80\%\)</span>
+</td>
+<td>
+C
+</td>
 </tr>
-<tr class="even">
-<td style="text-align: left;"><span class="math inline">\(60\% \leq x &lt; 70\%\)</span></td>
-<td style="text-align: left;">D</td>
+<tr>
+<td>
+<span class="math inline">\(60\% \leq x &lt; 70\%\)</span>
+</td>
+<td>
+D
+</td>
 </tr>
-<tr class="odd">
-<td style="text-align: left;"><span class="math inline">\(0 \% \leq x &lt; 60\%\)</span></td>
-<td style="text-align: left;">F</td>
+<tr>
+<td>
+<span class="math inline">\(0 \% \leq x &lt; 60\%\)</span>
+</td>
+<td>
+F
+</td>
 </tr>
-</tbody>
 </table>
 <h2 id="late-policy-and-exceptions">Late policy and exceptions</h2>
 <p>There are no makeups for exams or homework except for university recognized activities or exceptional circumstances, as per university policy. If a student needs to miss class due to participation in official university activities or a religious observance, they must make arrangements with the instructor at least one week prior to the date in question. In cases of absences due to extended illness, family emergency, bereavement, or other compelling reason, students should notify the instructor as soon as possible and <strong>within one week of the start of the absence</strong>. The instructor has the right to request formal, written documentation in such cases as they deem appropriate. Please see the <a href="https://www.unr.edu/administrative-manual/3000-3999-students/3020-class-absence-policy" target="_blank">full policy statement on absences</a>.</p>
