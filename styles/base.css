@@ -1,10 +1,15 @@
 <style type="text/css">
 
 /*
- * Copyright 2013 Christophe-Marie Duquesne <chmd@chmd.fr>
+ * Copyright 2019 Colin Grudzien <cgrudzien@unr.edu>
  *
- * CSS for making a resume with pandoc. Inspired by moderncv.
+ * Based on CSS developed orignally by 
  *
+ * Christophe-Marie Duquesne <chmd@chmd.fr>
+ *
+ * CSS for making functional teaching documents with accessible mathematics
+ * with Markdown/ pandoc. Inspired by moderncv.
+ * 
  * This CSS document is delivered to you under the CC BY-SA 3.0 License.
  * https://creativecommons.org/licenses/by-sa/3.0/deed.en_US
  */
