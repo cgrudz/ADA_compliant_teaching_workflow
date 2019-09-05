@@ -1,6 +1,8 @@
-# ADA Compliant Teaching Work FLow
+# ADA Compliant Teaching Work Flow
+
 
 ## Background
+
 
 This repository is to document and share my teaching workflow.  This workflow has been designed to meet as best as possible 
 <a href="https://www.ada.gov/pcatoolkit/chap5toolkit.htm" target="blank">ADA web accessibility requirements</a>.  Implementing the rules surrounding
@@ -10,11 +12,21 @@ ADA accessibility for mathematics and statistics coursework is a complex task, a
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, 
 DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH 
-THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. SEE THE LICENCE FOR FUTHER DETAILS.
+THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. SEE THE <a href="LICENSE" target="blank">LICENCE</a> FOR FUTHER DETAILS.
 </blockquote>
 
+The main goal of this workflow is to produce Markdown/ HTML based documents in standard letter size, including mathematical equations rendered by
+<a href="https://www.mathjax.org/" target="blank">MathJax</a>.  These documents should satisfy two requirements:
+  1. these must render as accessible, persistent HTML pages for hosting online; and
+  2. these must print well directly from PDF exports of the HTML pages with standard web browsers.
+Due to various issues in making PDF documents accessible to screen readers, the persistent copies are meant to be hosted online for documentation on
+my course web pages.  However, when necessary, I want to be able to print nearly identical copies to hand out in my classes.  These templates are an
+attempt at meeting the two above goals.
 
+### Attribution
 
+This project is a fork of the <a href="https://github.com/mszep/pandoc_resume" target="blank">Pandoc Resume</a> project, to which I owe inspiration for
+the work flow, many aspects of the CSS and the Pandoc makefile.  Please see the <a href="LICENSE" target="blank">LICENCE</a>. 
 
 ## Instructions
 ```bash
