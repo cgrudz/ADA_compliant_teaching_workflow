@@ -1,4 +1,4 @@
-# My attempt at ADA Compliant Teaching Work FLow
+# ADA Compliant Teaching Work FLow
 
 ## Background
 
@@ -14,20 +14,14 @@ THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. SEE THE LICENCE FOR F
 </blockquote>
 
 
-### Instructions
+
+
+## Instructions
 ```bash
 git clone https://github.com/cgrudz/ADA_compliant_teaching_workflow
-cd pandoc_resume
-vim markdown/resume.md   # insert your own resume info
-make
-```
-
-### Running Dockerized
-```bash
-git clone https://github.com/mszep/pandoc_resume
-cd pandoc_resume
-vim markdown/resume.md   # insert your own resume info
-docker-compose up -d
+cd ADA_compliant_teaching_workflow 
+vim markdown/"some_template.md"   # choose a template to work with and fill values
+make  # this will run pandoc with Mathjax settings, outputting to HTML
 ```
 
 ### Requirements
