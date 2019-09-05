@@ -15,13 +15,25 @@ DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
 THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. SEE THE <a href="LICENSE" target="blank">LICENCE</a> FOR FUTHER DETAILS.
 </blockquote>
 
-The main goal of this workflow is to produce Markdown/ HTML based documents in standard letter size, including mathematical equations rendered by
-<a href="https://www.mathjax.org/" target="blank">MathJax</a>.  These documents should satisfy two requirements:
+Thanks to <a href="https://www.unr.edu/tlt" target="blank">Don Massie</a> and <a href="https://wolfweb.unr.edu/~asarantsev/" target="blank">Andrey Sarantsev</a>
+for investigating the <a href="https://wolfweb.unr.edu/~asarantsev/accessdetail.html" target="blank">primary issues and various solutions</a> for accessible math documents.
+
+To summarize one of the main conclusions:
+<blockquote>
+We described a way to make LaTeX accessible for visually impaired students via conversion through Pandoc to HTML-MathJax. 
+We discussed in detail that Pandoc does not convert everything automatically, and we need to do some work manually. 
+This is especially true for research articles, not so much for lecture notes and assignments. 
+In other words, it is easier to deal with materials for undergraduate teaching than it is with research papers.
+</blockquote>
+
+Due to various issues in making PDF documents accessible to screen readers, I want to make persistent copies of my materials that can be hosted online for documentation on
+my course web pages.  However, when necessary, I want to be able to print nearly identical copies to hand out in my classes.
+
+The main goal of this workflow is to produce Markdown/ HTML native documents in standard letter size, including mathematical equations rendered by
+<a href="https://www.mathjax.org/" target="blank">MathJax</a>. This has the benefit of not needing to make multiple conversions, and relying on a
+single style sheet for formatting. These documents should satisfy two requirements:
   1. these must render as accessible, persistent HTML pages for hosting online; and
   2. these must print well directly from PDF exports of the HTML pages with standard web browsers.
-Due to various issues in making PDF documents accessible to screen readers, the persistent copies are meant to be hosted online for documentation on
-my course web pages.  However, when necessary, I want to be able to print nearly identical copies to hand out in my classes.  These templates are an
-attempt at meeting the two above goals.
 
 ### Attribution
 
