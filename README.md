@@ -1,9 +1,22 @@
-The Markdown Resume
-===================
+# My attempt at ADA Compliant Teaching Work FLow
+
+## Background
+
+This repository is to document and share my teaching workflow.  This workflow has been designed to meet as best as possible 
+<a href="https://www.ada.gov/pcatoolkit/chap5toolkit.htm" target="blank">ADA web accessibility requirements</a>.  Implementing the rules surrounding
+ADA accessibility for mathematics and statistics coursework is a complex task, and
+
+<blockquote style="fontweight:bold"> 
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, 
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH 
+THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. SEE THE LICENCE FOR FUTHER DETAILS.
+</blockquote>
+
 
 ### Instructions
 ```bash
-git clone https://github.com/mszep/pandoc_resume
+git clone https://github.com/cgrudz/ADA_compliant_teaching_workflow
 cd pandoc_resume
 vim markdown/resume.md   # insert your own resume info
 make
