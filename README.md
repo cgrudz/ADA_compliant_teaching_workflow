@@ -52,7 +52,7 @@ the work flow, many aspects of the CSS and the Pandoc makefile.  Please see the 
     * 1.x is deprecated
 
 
-#### How to download
+#### How to download the repository
 
 ```bash
 git clone https://github.com/cgrudz/ADA_compliant_teaching_workflow
@@ -60,13 +60,24 @@ git clone https://github.com/cgrudz/ADA_compliant_teaching_workflow
 
 Or via the Github GUI.
 
-#### How to use
+#### How to get started
 
+1. Enter the repository directory:
 ```bash
 cd ADA_compliant_teaching_workflow 
-vim markdown/"some_template.md"   # choose a template to work with and fill values
+```
+
+2. Edit "some_template" with your favorite editor:
+
+```bash
+vim markdown/"some_template.md"   
+```
+
+3. Run pandoc with Mathjax settings enabled, outputting to HTML files
+```bash
 make  # this will run pandoc with Mathjax settings, outputting to HTML
 ```
+
 The make file will produce HTML documents (with MathJax equations from LaTeX) from all files found in the "markdown" directory.  The output HTML documents will be
 saved to the "output" directory.  This should work on standard Linux and Unix distributions. Windows users can use the command 
 line with <a href="https://docs.microsoft.com/en-us/windows/wsl/install-win10">Bash on Windows</a>
@@ -105,9 +116,12 @@ wget https://github.com/jgm/pandoc/releases/download/2.2.1/pandoc-2.2.1-1-amd64.
 sudo dpkg -i pandoc-2.2.1-1-amd64.deb
 ```
 
-### How to use
+### FAQ
 
-Write new documents or edit existing templates in the ".md" file type wihtin the IN_DIR.
+ * __Q:__ How do I create my own materials with this workflow?
+
+Write new documents or edit existing templates in the ".md" file type within the IN_DIR.  Use the make command as above to export these
+into the HTML pages.
 
  * __Q:__ What is ".md" file type?
 
@@ -161,4 +175,6 @@ Generally, you can set many different sizes of blank space either manually or wi
 under the styles directory which is set to give 2 inches of blank space.  
 You can edit this yourself if you need different spacing, or create different classes of divs for the same purpose.
 
+* __Q:__ How do I get help?
 
+You can contact me directly and I will try to assist or point you to a relevant resource.
