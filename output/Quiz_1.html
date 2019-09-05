@@ -18,57 +18,41 @@
   <style type="text/css">
   
   /*
-   * Copyright 2013 Christophe-Marie Duquesne <chmd@chmd.fr>
+   * Copyright 2019 Colin Grudzien <cgrudzien@unr.edu>
    *
-   * CSS for making a resume with pandoc. Inspired by moderncv.
+   * Based on CSS developed orignally by 
    *
+   * Christophe-Marie Duquesne <chmd@chmd.fr>
+   *
+   * CSS for making functional teaching documents with accessible mathematics
+   * with Markdown/ pandoc. Inspired by moderncv.
+   * 
    * This CSS document is delivered to you under the CC BY-SA 3.0 License.
    * https://creativecommons.org/licenses/by-sa/3.0/deed.en_US
    */
   
-  /* Whole document */
+  /* Whole document - standard notebook size and margins */
   body {
       font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-      max-width: 800px;
+      max-width: 8.5in;
       margin: auto;
       background: #FFFFFF;
-      padding: 10px 10px 10px 10px;
+      padding: 1in 1in 1in 1in;
   }
   
-  /* Title of the resume */
+  /* Title of the document */
   h1 {
       font-size: 50px;
       color: #000000;
       text-align:center;
       margin-bottom:15px;
   }
-  /*h1:hover {
-      background-color: #757575;
-      color: #FFFFFF;
-      text-shadow: 1px 1px 1px #333;
-  }
-  */
-  /* Titles of categories */
+  
+  /* Subheadings */
   h2 {
-      /* This is called "sectioncolor" in the ConTeXt stylesheet. */
       color: #000000;
   }
-  /* There is a bar just before each category 
-  h2:before {
-      content: "";
-      display: inline-block;
-      margin-right:1%;
-      width: 16%;
-      height: 10px;
-      /* This is called "rulecolor" in the ConTeXt stylesheet. */
-      background-color: #9CB770;
-  }*/
-  /*h2:hover {
-      background-color: #397249;
-      color: #FFFFFF;
-      text-shadow: 1px 1px 1px #333;
-  }
-  */
+  
   /* Definitions */
   dt {
       float: left;
