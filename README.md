@@ -31,9 +31,10 @@ my course web pages.  However, when necessary, I want to be able to print nearly
 
 The main goal of this workflow is to produce Markdown/ HTML native documents in standard letter size, including mathematical equations rendered by
 <a href="https://www.mathjax.org/" target="blank">MathJax</a>. This has the benefit of not needing to make multiple conversions, and relying on a
-single style sheet for formatting. These documents should satisfy two requirements:
-  1. these must render as accessible, persistent HTML pages for hosting online; and
-  2. these must print well directly from PDF exports of the HTML pages with standard web browsers.
+single style sheet for formatting. These documents should satisfy the following requirements:
+  1. these must render as accessible, persistent HTML pages for hosting online; 
+  2. these must print well directly from PDF exports of the HTML pages with standard web browsers;
+  3. the process must be relatively simple, relying on few commands or specialized knowledge of Bash or HTML.
 
 ### Attribution
 
