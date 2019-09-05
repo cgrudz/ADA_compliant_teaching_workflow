@@ -35,6 +35,9 @@ cd ADA_compliant_teaching_workflow
 vim markdown/"some_template.md"   # choose a template to work with and fill values
 make  # this will run pandoc with Mathjax settings, outputting to HTML
 ```
+The make file will produce HTML documents (with MathJax equations from LaTeX) from all files found in the "markdown" directory.  The output HTML documents will be
+saved to the "output" directory.
+
 
 ### Requirements
 
