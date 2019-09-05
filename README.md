@@ -55,8 +55,8 @@ vim markdown/"some_template.md"   # choose a template to work with and fill valu
 make  # this will run pandoc with Mathjax settings, outputting to HTML
 ```
 The make file will produce HTML documents (with MathJax equations from LaTeX) from all files found in the "markdown" directory.  The output HTML documents will be
-saved to the "output" directory.  This should work on standard Linux and Unix distributions.  
-Windows users can use the command line with <a href="https://docs.microsoft.com/en-us/windows/wsl/install-win10">Bash on Windows</a>
+saved to the "output" directory.  This should work on standard Linux and Unix distributions. Windows users can use the command 
+line with <a href="https://docs.microsoft.com/en-us/windows/wsl/install-win10">Bash on Windows</a>
 
 The preset values can be edited in the Makefile as
 
@@ -77,6 +77,7 @@ the documents with note page formatting.  STYLE variable will be the chosen css 
 Last tested on the above versions and that's not to say the later versions won't work. Please try to use the latest versions when possible.
 Check if the dependencies are up to date.
 
+e.g.,
 ```
 pandoc --version
 ```
@@ -96,5 +97,55 @@ sudo dpkg -i pandoc-2.2.1-1-amd64.deb
 Write new documents or edit existing templates in the ".md" file type wihtin the IN_DIR.
 
  * __Q:__ What is ".md" file type?
+
+This is <a href="https://www.markdownguide.org/getting-started" target="blank">Markdown</a>, a popular Markup typsetting language. You
+can think of this similarly to LaTeX, but based around web page commands and simplified HTML.
+
+ * __Q:__ How do I write math equations in the documents?
+
+This is done as with standard LaTeX, with minor differences.  To enter math-mode in line, use the usual ``$`` sign. To write equations
+in a new line, use ``$$`` a double sign enclosure.  This will accept standard LaTeX environments such as
+
+ * ``\begin{align}``
+ * ``\begin{equation}``
+
+but these must be enclosed within the double ``$$``.
+
+ * __Q:__ What about including figures?
+
+This should be done within native Markdown or with HTML in the text.  
+
+ * __Q:__ How do I get a PDF output to print in class?
+
+You can do this with a standard browser, such as Firefox or Chrome.  Use the print page option within the browser when you have loaded
+the HTML page within the browser.  Remember, don't include any margins in the printing settings as these are set within the HTML
+by default to notebook pages with 1 inch margins.
+
+ * __Q:__ Why does printing cut off in weird places and how do I fix this?
+
+The document doesn't automatically recognize where we want page breaks when we print to PDF or out to a hard copy.  Unfortunately,
+the best option I'm aware of is to manually set these as follows:
+
+```html
+<div class="pagebreak"> </div>
+```
+ 
+Place a "pagebreak" div at the point you want the page to cut off.  This will automatically cut the page for printing or conversion
+to PDF immediately before this element. __Note__ this will automatically enforce a 1 inch margin at the top of the new page,
+but __you must manually set where you want a break at the bottom of the page__.  For my handouts, quizzes, etc, I feel OK just
+approximating it.
+
+ * __Q:__ How do I make space in between elements, such as blocks of text and math, to give problems with room to hand fill
+answers in the printed sheet?
+
+Include an "answers_div" as follows
+
+```html
+<div class="answer_div"></div>
+```
+
+Generally, you can set many different sizes of blank space either manually or with CSS.  The "answers_div" class is in the base.css
+under the styles directory which is set to give 2 inches of blank space.  
+You can edit this yourself if you need different spacing, or create different classes of divs for the same purpose.
 
 

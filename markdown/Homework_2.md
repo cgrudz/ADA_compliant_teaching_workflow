@@ -28,6 +28,7 @@ Instructor: Colin Grudzien
    <li>The sum of the residuals, weighted by the corresponding fitted value, is zero,
     $$\sum_{i=1}^n \hat{Y}_i \hat{\epsilon}_i = 0$$
    </li>
+<div class="pagebreak"> </div>
    <li>The estimated regression function always passes through the point defined by the means (or the center of mass), $\left(\overline{X},\overline{Y}\right)$.
   </li>
 </ol>

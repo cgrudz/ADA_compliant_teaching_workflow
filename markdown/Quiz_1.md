@@ -16,9 +16,7 @@ $$
 Y_i = \beta_0 + \beta_1 X_i + \epsilon_i
 $$
 where $\mathbb{E}\left[\epsilon_i\right] = 0$ and $\mathbb{E}\left[\epsilon_i^2\right] = \sigma^2$.  Use the definition of the variance of a random variable to derive the variance of $Y_i$.
-<div class="answer_div">
-
-</div>
+<div class="answer_div"></div>
 
 
 
@@ -31,4 +29,3 @@ Which of the following equations linear in the parameters $\beta_j$, or can be t
   <li>$Y_i = \beta_0 X_i^{\beta_1} \epsilon_i$.</li>
 </ol>
 
-<div class="answer_div"></div>

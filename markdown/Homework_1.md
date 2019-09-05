@@ -28,6 +28,7 @@ You may work with others on these problems but you must turn in your own work.  
   1. Import the ``gampminder`` data from the library ``gapminder``. 
 
   2. We want to do some regional analysis.  Write an R script that performs the following:
+<div class="pagebreak"> </div>
 
 	 * make a multi-panel plot, where each frame corresponds to one of the five regions: ``Africa``, ``Americas``, ``Asia``, ``Europe``, ``Oceania``;  
 	 * the vertical axis should correspond to ``lifeExp`` and the horizontal axis should correspond to ``year``;
