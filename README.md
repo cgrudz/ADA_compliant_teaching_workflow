@@ -38,6 +38,16 @@ make  # this will run pandoc with Mathjax settings, outputting to HTML
 The make file will produce HTML documents (with MathJax equations from LaTeX) from all files found in the "markdown" directory.  The output HTML documents will be
 saved to the "output" directory.
 
+The preset values can be edited in the Makefile as
+
+```bash
+UT_DIR=output
+IN_DIR=markdown
+STYLES_DIR=styles
+STYLE=base
+```
+where the output and input directories can be edited in the UT_DIR and IN_DIR above.  STYLES_DIR is the directory which contains all CSS for rendering 
+the documents with note page formatting.  STYLE variable will be the chosen css in the STYLES_DIR.
 
 ### Requirements
 
