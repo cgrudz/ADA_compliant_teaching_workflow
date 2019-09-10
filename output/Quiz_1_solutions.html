@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>Quiz_1</title>
+  <title>Quiz_1_solutions</title>
   <style type="text/css">
       code{white-space: pre-wrap;}
       span.smallcaps{font-variant: small-caps;}
@@ -181,7 +181,14 @@ This quiz will be ungraded but must be handed in for attendance.</p>
 Assume that the following relationship is valid: <span class="math display">\[
 Y_i = \beta_0 + \beta_1 X_i + \epsilon_i
 \]</span> where <span class="math inline">\(\mathbb{E}\left[\epsilon_i\right] = 0\)</span> and <span class="math inline">\(\mathbb{E}\left[\epsilon_i^2\right] = \sigma^2\)</span>. Use the definition of the variance of a random variable to derive the variance of <span class="math inline">\(Y_i\)</span>.
-<div class="answer_div">
+<div class="solutions">
+<h4 id="solution">Solution:</h4>
+<p>Recall, the mean of the random variable <span class="math inline">\(Y_i\)</span> is given as, <span class="math display">\[\mathbb{E}\left[Y_i \right] =  \mathbb{E}\left[ \beta_0 \right] + \mathbb{E}\left[\beta_1 X_i \right] + \mathbb{E}\left[\epsilon_i \right]\]</span> by the linearity of the expectation over sums. Assuming that <span class="math inline">\(\beta_0,\beta_1,X_i\)</span> are all deterministic constants, then, <span class="math display">\[\mathbb{E}\left[Y_i \right] =   \beta_0 + \beta_1 X_i. \]</span> By definition of the variance, we can compute, <span class="math display">\[\begin{align}
+\mathbb{E}\left[\left(Y_i -  \beta_0 + \beta_1 X_i\right)^2\right] &amp;= \mathbb{E}\left[ \epsilon_i^2\right] \\
+&amp;=\sigma^2 
+\end{align}\]</span></p>
+</div>
+<div class="pagebreak">
 
 </div>
 <h3 id="problem-2">Problem 2:</h3>
@@ -197,5 +204,19 @@ Which of the following equations linear in the parameters <span class="math inli
 <span class="math inline">\(Y_i = \beta_0 X_i^{\beta_1} \epsilon_i\)</span>.
 </li>
 </ol>
+<div class="solutions">
+<h4 id="solution-1">Solution:</h4>
+<ol>
+<li>
+Note that <span class="math inline">\(X_i^\frac{3}{2}\)</span> can always just be written as a change of scale; the linearity of the equation in the parameters is not affected by the nonlinearity of the predictor.
+</li>
+<li>
+The product of the three parameters <span class="math inline">\(\beta_1,\beta_2,\beta_3\)</span> in addition to the terms in the sum renders this nonlinear, without a direct transformation available.
+</li>
+<li>
+Note that if we take log of the equality, then <span class="math display">\[ \log(Y_i) = \log(\beta_0) + \beta_1 \log(X_i) +  \log(\epsilon_i),\]</span> Note that if <span class="math inline">\(\epsilon\)</span> is assumed to be mean zero, this may prove to be an issue, and our assumptions about <span class="math inline">\(\epsilon_i\)</span> will necessarily change with respect to such a model.
+</li>
+</ol>
+</div>
 </body>
 </html>

@@ -146,6 +146,8 @@ table.minimalistBlack tfoot td {
 } 
 }
 
-
+div.solutions * {
+    color:#000099;
+}
 
 </style>

@@ -175,6 +175,19 @@ Generally, you can set many different sizes of blank space either manually or wi
 under the styles directory which is set to give 2 inches of blank space.  
 You can edit this yourself if you need different spacing, or create different classes of divs for the same purpose.
 
+#### Q: How do I highlight portions of text in solution keys, e.g., to show the solution after the problem?
+
+This can be done with the "solutions" class of div,
+
+```html
+<div class="solutions">
+"Some text"
+</div>
+```
+Within this element, "Some text" will be colored blue, as will anything else which lies in this container.  The color can be changed within the base.css,
+and other similar classes can be created like this.
+
+
 #### Q:  How do I get help?
 
 You can contact me directly at cgrudzien AT unr DOT edu and I will try to assist or point you to a relevant resource.
