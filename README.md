@@ -43,14 +43,38 @@ the work flow, many aspects of the CSS and the Pandoc makefile.  Please see the 
 
 ## Instructions
 
+I can recommend two ways to approach this:
 
-### Installation
+<ol>
+  <li>If you prefer to work within a graphical environment, use <a href="https://www.rstudio.com/" target="blank">R Studio</a> 
+  and approach this within an <a href="https://bookdown.org/yihui/rmarkdown/">RMarkdown framework</a>.  This has the following pros and cons:</li>
+  <ul>
+   <li> Pro: R Studio has integration with Pandoc, which means that you can output your markdown files into any format you want.</li>
+   <li> Pro: R Studio is also highly user-friendly, and includes document previews and automatic compiling of documents through the graphical interface.</li>
+   <li> Pro: There are pre-made templates within the R Studio environment for different types of documents.</li> 
+   <li> Pro: R Studio has installers for all operating systems and should be compatible with most configurations without any extra work.</li>
+   <li> Con: R Studio frontmatter doesn't seem to fully respect custom CSS stylesheets, so you won't have much flexibility.</li> 
+   <li> Con: Output PDFs through the Pandoc integration don't match the styling of the HTML documents by default, meaning you will have different formatting
+        for printed and hosted documents.</li>
+  </ul>
+  <li>If you are even slightly familiar with command line, you can use my templates and "Makefile" for Pandoc with any editor you like. This has the following
+      pros and cons:</li>
+  <ul>
+   <li> Pro: you can use any editor you like and any custom stylesheets for formatting.</li>
+   <li> Con: for Windows users, you will need to use a <a href="https://docs.microsoft.com/en-us/windows/wsl/install-win10" target="blank">Linux subsystem on Windows</a> in order to
+        use the Makefile in the Bash shell.</li>
+  </ul>
+  
+</ol>
+
+### Installation 
 
 #### Requirements
 
 * <a href="https://pandoc.org/installing.html" targeti="blank">pandoc 2.x</a>
     * 1.x is deprecated
 
+* <b>Optional:</b> <a href="https://www.rstudio.com/" target="blank">R Studio</a>
 
 #### How to download the repository
 
@@ -61,6 +85,19 @@ git clone https://github.com/cgrudz/ADA_compliant_teaching_workflow
 Or via the Github GUI.
 
 #### How to get started
+
+##### In R Studio
+
+Open any of the templates in the .rmd file type in the R_markdown directory.  Use the 
+<a href="https://support.rstudio.com/hc/en-us/articles/200552056-Using-Sweave-and-knitr" target="blank">knit</a> option in the R Studio editor
+to produce an HMTL document in the same directory.  You can print from this HTML page by setting the margins within the browswer printing options; 
+unfortunately it seems that the frontmatter doesn't respect the page formatting in the "base.css" in the provided stylesheets, but it will respect
+some of the options.
+
+You can also use any of the standard .rmd templates provided by R Studio, but it is recommended that you compile all documents to HTML as your
+persistent, shareable format.
+
+##### In command line
 
 1. Enter the repository directory:
 ```bash
@@ -105,6 +142,8 @@ e.g.,
 ```
 pandoc --version
 ```
+
+* For the R Studio option, follow all the installation requirements provided by R Studio.
 
 #### Cannot process lua
 Currently pandoc 1.x may be within your distro's repos and the latest version should be used. See the

@@ -1,0 +1,34 @@
+# Quiz 3
+
+
+## Instructions
+
+>  Write your name at the top right.  You are to work on this quiz alone without any help 
+>  from any other resource <b>except for a single $8.5 \times 11$ inch page of handwritten notes</b>.  
+>  This quiz will be ungraded but must be handed in for attendance. 
+
+
+## Problems:
+
+In the following, we refer to the standard regression model,
+$$Y_i = \beta_0 + \beta_1 X_i + \epsilon_i,$$
+for which we assume the conditions of the Gauss-Markov theorem hold.
+
+### Problem 1:
+
+Assume that $X = 0$ is within the scope of the model. What is the implication for the regression model if $\beta_0$ = 0 so that the model is
+$$Y_i = \beta_1 X_i + \epsilon_i?$$
+
+How would the regression function plot on a graph?
+
+<div class="pagebreak"></div>
+
+### Problem 2:
+
+What is the implication for the regression model if $\beta_1 = 0$,
+so that the model is 
+$$Y_i = \beta_0 + \epsilon_i?$$ 
+How would the regression function plot on a graph?
+
+
+

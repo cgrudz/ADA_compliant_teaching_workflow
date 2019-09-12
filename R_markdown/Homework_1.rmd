@@ -1,11 +1,10 @@
 ---
 output:
-  word_document: default
-  pdf_document: default
   html_document:
     css: ../styles/base.css
     highlight: null
     theme: null
+  pdf_document: default
 ---
 
 # Homework 1
