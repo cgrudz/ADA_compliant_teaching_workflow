@@ -4,7 +4,9 @@ output:
     css: ../styles/base.css
     highlight: null
     theme: null
-  pdf_document: default
+    includes:
+      in_header: ../styles/notebook.html
+  
 ---
 
 # Homework 1

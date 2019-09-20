@@ -1,0 +1,90 @@
+---
+title: Midterm 1 Study Guide
+output:
+  html_document:
+    css: ../styles/base.css
+    highlight: null
+    theme: null
+    includes:
+      in_header: ../styles/notebook.html
+---
+
+## Instructions
+
+>   For the midterm you are allowed a
+>   <b>a single $8.5 \times 11$ inch page of handwritten notes</b>.  
+>   It is recommended that you take notes from the lectures based on each of the following conceptual questions.
+>   In addition, you are recommended to study all of the quiz and homework solutions, as well as the exercises 
+>   we went through in class.  Some questions may be taken verbatim, and some with a slight difference.  Understanding
+>   the reasoning in each exercise is the key point, and will help you when you encounter something not seen before.
+
+## Problems:
+
+### Problem 1:
+State the form of the standard linear regression model, either in matrix form or in a scalar equation.  State the assumptions of the Gauss-Markov theorem. Identify which parts of the equation
+are known or unkown, and which are deterministic or random in the standard model.
+<div class="answer_div"></div>
+
+
+### Problem 2:
+Let $\hat{\boldsymbol{\beta}}$ be the vector of parameters estimated by least squares.  What is $\mathbb{E}\left[\hat{\boldsymbol{\beta}}\right]$? Explain in what sense the
+least squares estimated parameters are an optimal estimate.  
+<div class="answer_div"></div>
+
+
+<div class="pagebreak"></div>
+### Problem 3:
+State the form of the estimated mean function for the standard model.  What mathematical quantity describes the difference between the fitted values and the observed cases?
+<div class="answer_div"></div>
+
+### Problem 4:
+We suppose that the errors in the standard model in Problem 1 are also Gaussian.  Explain which of the quantities in problems 1 - 3 are also Gaussian random variables.
+You do not need to include equations, but you should explain why these are Gaussian random variables with simple reasoning.
+<div class="answer_div"></div>
+
+<div class="pagebreak"></div>
+### Problem 5:
+We suppose that the errors in the standard model in Problem 1 are also Gaussian.  What can we state in addition to the Gauss-Markov theorem about
+the least squares estimated $\hat{\boldsymbol{\beta}}$?  Explain why a Gaussian error approximation might be reasonable, if not always stictly accurate.  State the name
+of a key theorem, and under what conditions it should apply.
+<div class="answer_div"></div>
+
+### Problem 6:
+Suppose we know a random variable $Y \sim P_{\theta_0}$ for some probability distribution, but the parameter $\theta_0$ is unknown.  Suppose we
+can evaluate $P_\theta(Y = y)$ for any observed piece of data $y$.  Construct the likelihood function for $\theta$ from this information.  Explain how to obtain
+a "best" estimate with the likelihood function given a set of $n$ independent pieces of data $\left\{y_i\right\}_{i=1}^n$.
+<div class="answer_div"></div>
+
+<div class="pagebreak"></div>
+### Problem 7:
+Suppose that instead of the standard model in problem 1, we suppose $X,Y$ are jointly Gaussian distributed random variables.  Explain in what sense we can
+create a linear regression model in this context.  Specifically, what does the estimated mean function represent in this context?
+<div class="answer_div"></div>
+
+### Problem 8:
+Explain the meaing of each of the $RSS$, $TSS$ and $ESS$.  What is (broadly speaking) the implication for our regression analysis if
+<ul>
+   <li>the $RSS$ is large or the $RSS$ is small;</li>
+   <li>the $TSS$ is large or the $TSS$ is small;</li>
+   <li>the $ESS$ is large or the $ESS$ is small? </li>
+</ul>
+<div class="answer_div"></div>
+
+### Problem 9:
+What is $R^2$? What is its possible range of values and what does each end correspond to?
+<div class="answer_div"></div>
+
+<div class="pagebreak"></div>
+### Problem 10:
+Explain how many degrees of freedom are available in a <b>simple</b> regression model with $n$ observations.  Where do the constaints come from?
+<div class="answer_div"></div>
+
+
+### Problem 11:
+Suppose we have $n$ cases of data $\left\{ \left(X_i, Y_i\right)\right\}_{i=1}^3$.  Construct the design matrix and explain what each column corresponds to.
+<div class="answer_div"></div>
+
+### Problem 12:
+What issues do we encounter in regression analysis if the number of cases $n$ is equal to the number of paraemters $p$?
+<div class="answer_div"></div>
+

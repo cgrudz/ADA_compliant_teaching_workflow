@@ -1,11 +1,14 @@
 ---
+title: Applied Regression Analysis
 output:
   html_document:
     css: ../styles/base.css
     highlight: null
     theme: null
+    includes:
+      in_header: ../styles/notebook.html
 ---
-# Applied Regression Analysis
+
 STAT 757 -- Section 1001 <br>
 Instructor: Colin Grudzien
 

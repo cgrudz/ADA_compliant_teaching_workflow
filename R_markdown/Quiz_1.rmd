@@ -1,16 +1,13 @@
 ---
+title: Quiz 1
 output:
   html_document:
     css: ../styles/base.css
     highlight: null
     theme: null
-  pdf_document: default
-  word_document: default
+    includes:
+      in_header: ../styles/notebook.html
 ---
-
-
-# Quiz 1
-
 
 ## Instructions
 

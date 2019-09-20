@@ -53,14 +53,17 @@ I can recommend two ways to approach this:
    <li> Pro: R Studio is also highly user-friendly, and includes document previews and automatic compiling of documents through the graphical interface.</li>
    <li> Pro: There are pre-made templates within the R Studio environment for different types of documents.</li> 
    <li> Pro: R Studio has installers for all operating systems and should be compatible with most configurations without any extra work.</li>
-   <li> Con: R Studio frontmatter doesn't seem to fully respect custom CSS stylesheets, so you won't have much flexibility.</li> 
+   <li> Con: R Studio yaml frontmatter doesn't seem to fully respect custom CSS stylesheets.  In response, I have found several "hacky" workarounds to force-overide some of these
+        settings which are inclued in my R Markdown templates, but this can be inelegant.  Some issues aren't fully resolved and are discussed in the [Known Issues Section](#Known Issues).</li> 
    <li> Con: Output PDFs through the Pandoc integration don't match the styling of the HTML documents by default, meaning you will have different formatting
-        for printed and hosted documents.</li>
-  </ul>
+        for printed and hosted documents.  For this reason, it is still recommended that you only output your markdown documents to HTML anyway.</li>
+  </ul> 
   <li>If you are even slightly familiar with command line, you can use my templates and "Makefile" for Pandoc with any editor you like. This has the following
       pros and cons:</li>
   <ul>
    <li> Pro: you can use any editor you like and any custom stylesheets for formatting.</li>
+   <li> Con: I haven't figured out yet how to integrate R Markdown features such as Knitr code wrapping into documents from command line.  This will be investigated further as
+        time is available.  If you have a solution, fork this repository and contact me.</li>
    <li> Con: for Windows users, you will need to use a <a href="https://docs.microsoft.com/en-us/windows/wsl/install-win10" target="blank">Linux subsystem on Windows</a> in order to
         use the Makefile in the Bash shell.</li>
   </ul>
@@ -132,7 +135,7 @@ the documents with note page formatting.  STYLE variable will be the chosen css 
 
 ### Requirements
 
-* <a href="https://pandoc.org/installing.html" targeti="blank">pandoc 2.x</a>
+* <a href="https://pandoc.org/installing.html" target="blank">pandoc 2.x</a>
     * 1.x is deprecated
 
 Last tested on the above versions and that's not to say the later versions won't work. Please try to use the latest versions when possible.
@@ -143,17 +146,12 @@ e.g.,
 pandoc --version
 ```
 
-* For the R Studio option, follow all the installation requirements provided by R Studio.
-
-#### Cannot process lua
-Currently pandoc 1.x may be within your distro's repos and the latest version should be used. See the
-[pandoc releases](https://github.com/jgm/pandoc/releases) for your distro.
-
 e.g. for Debian / Ubuntu
 ```
 wget https://github.com/jgm/pandoc/releases/download/2.2.1/pandoc-2.2.1-1-amd64.deb
 sudo dpkg -i pandoc-2.2.1-1-amd64.deb
 ```
+* For the R Studio option, follow all the installation requirements provided by R Studio.
 
 ### FAQ
 
@@ -230,3 +228,10 @@ and other similar classes can be created like this.
 #### Q:  How do I get help?
 
 You can contact me directly at cgrudzien AT unr DOT edu and I will try to assist or point you to a relevant resource.
+
+### Known Issues
+
+#### R Markdown issues
+
+
+#### R Presentation Issues

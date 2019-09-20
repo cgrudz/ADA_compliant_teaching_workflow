@@ -1,13 +1,14 @@
 ---
+title: Homework 3
 output:
   html_document:
     css: ../styles/base.css
     highlight: null
     theme: null
+    includes:
+      in_header: ../styles/notebook.html
 ---
 
-
-# Homework 3 
 STAT 757 -- Section 1001 <br>
 Instructor: Colin Grudzien
 

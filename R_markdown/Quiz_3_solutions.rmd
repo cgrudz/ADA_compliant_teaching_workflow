@@ -1,13 +1,13 @@
 ---
+title: Quiz 3
 output:
   html_document:
     css: ../styles/base.css
     highlight: null
     theme: null
+    includes:
+      in_header: ../styles/notebook.html
 ---
-
-# Quiz 3
-
 
 ## Instructions
 
