@@ -145,6 +145,7 @@ e.g.,
 ```
 pandoc --version
 ```
+#### Installation
 
 e.g. for Debian / Ubuntu
 ```
@@ -232,6 +233,13 @@ You can contact me directly at cgrudzien AT unr DOT edu and I will try to assist
 ### Known Issues
 
 #### R Markdown issues
-
+<ol>
+  <li> R Markdown yaml frontmatter will import custom stylesheets, however, it will not respect page size settings.  For this reason, I have incuded additional frontmatter with 
+```{yaml}
+includes:
+      in_header: ../styles/notebook.html
+```
+  in my R Markdown templates.  This has the effect of enforcing notebook size margins within these documents, by including CSS for the body element which is usually neglected by the yaml.
+</ol>
 
 #### R Presentation Issues
