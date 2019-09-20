@@ -235,7 +235,7 @@ You can contact me directly at cgrudzien AT unr DOT edu and I will try to assist
 #### R Markdown issues
 <ol>
   <li> R Markdown yaml frontmatter will import custom stylesheets, however, it will not respect page size settings.  For this reason, I have incuded additional frontmatter with 
-```
+```html
 includes:
       in_header: ../styles/notebook.html
 ```
