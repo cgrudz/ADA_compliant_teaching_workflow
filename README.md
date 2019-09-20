@@ -263,3 +263,41 @@ include __before the yaml frontmatter__ the following lines,
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 ````
+
+#### Splash screen has non-accessible color contrast levels
+This is an issue where, by default, the splash screen uses contrast levels that are non-accessible to the visually impaired.  The issue can be relieved by resetting the reveal.js
+css manually in the frontmatter __before the yaml__.  Include the following,
+```html
+<style>
+.section .reveal .state-background {
+   background: #ffffff;
+}
+.section .reveal h1,
+.section .reveal h2,
+.section .reveal p {
+   color: black;
+   margin-top: 50px;
+   text-align: center;
+}
+</style>
+````
+This changes the splash screen to normal white background and black text.  Additionally, I belive it is important to include istructions on how to use the presentation for students
+when they visit it later.  I include in my presentations the following lines __after the yaml__,
+```html
+<h2 style="text-align:left"> Instructions:</h2>
+<p style='text-align:left'>Use the left and right arrow keys to navigate the presentation forward and backward respectively.  You can also use the arrows at the bottom right of the screen to navigate with a mouse.<br></p>
+```
+so that student are aware of how to navigate the presentation.
+
+#### Blank headings in the output HTML
+This is an issue that I do not know how to fix yet, and it is pending a bug-report with the R Studio project.  Particullarly, when you check for accessibility with various checkers, you might find
+that there are blank heading tags such as 
+```html
+<h2> </h2>
+```
+or 
+```html
+<h3> </h3>
+```
+included inexplicably within your html presentation.  I do not have a fix for this, nor do I even understand what triggers it.  I have found that manually searching these
+code strings will lead you to the erroneous tags, and they can be removed line-by-line fairly quickly, but an automatic fix is pending.
