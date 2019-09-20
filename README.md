@@ -266,7 +266,7 @@ include __before the yaml frontmatter__ the following lines,
 
 #### Splash screen has non-accessible color contrast levels
 This is an issue where, by default, the splash screen uses contrast levels that are non-accessible to the visually impaired.  The issue can be relieved by resetting the reveal.js
-css manually in the frontmatter __before the yaml__.  Include the following,
+css.  This can be done using, e.g., CSS linked with the header yaml of the document or manually in the frontmatter __before the yaml__.  Include the following,
 ```html
 <style>
 .section .reveal .state-background {
@@ -281,7 +281,9 @@ css manually in the frontmatter __before the yaml__.  Include the following,
 }
 </style>
 ````
-This changes the splash screen to normal white background and black text.  Additionally, I belive it is important to include istructions on how to use the presentation for students
+This changes the splash screen to normal white background and black text.  
+
+Additionally, I belive it is important to include istructions on how to use the presentation for students
 when they visit it later.  I include in my presentations the following lines __after the yaml__,
 ```html
 <h2 style="text-align:left"> Instructions:</h2>
@@ -289,9 +291,17 @@ when they visit it later.  I include in my presentations the following lines __a
 ```
 so that student are aware of how to navigate the presentation.
 
+#### Non-descending heading levels in the output HTML
+It is recommended that you do not use titles for slides using the following syntax
+```
+Title of slide  
+========================================================
+```
+because this defaults to an ```<h3>``` tag.  Indeed, you will by default create missing heading levels.  You should structure your document and titles manually
+by using markdown heading levels for the titles in descending order without levels skipped.
+
 #### Blank headings in the output HTML
-This is an issue that I do not know how to fix yet, and it is pending a bug-report with the R Studio project.  Particullarly, when you check for accessibility with various checkers, you might find
-that there are blank heading tags such as 
+When you check for accessibility with various checkers, you might find that there are blank heading tags such as 
 ```html
 <h2> </h2>
 ```
@@ -299,5 +309,9 @@ or
 ```html
 <h3> </h3>
 ```
-included inexplicably within your html presentation.  I do not have a fix for this, nor do I even understand what triggers it.  I have found that manually searching these
-code strings will lead you to the erroneous tags, and they can be removed line-by-line fairly quickly, but an automatic fix is pending.
+included inexplicably within your html presentation.  Remember, if there are blank characters above a slide separator such as
+```
+  
+========================================================
+```
+this will be read as a title with an empty ```<h3>``` tag.  Avoid this, and check for blank characters above slide separators.
