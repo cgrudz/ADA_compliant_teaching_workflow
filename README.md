@@ -54,7 +54,7 @@ I can recommend two ways to approach this:
    <li> Pro: There are pre-made templates within the R Studio environment for different types of documents.</li> 
    <li> Pro: R Studio has installers for all operating systems and should be compatible with most configurations without any extra work.</li>
    <li> Con: R Studio yaml frontmatter doesn't seem to fully respect custom CSS stylesheets.  In response, I have found several "hacky" workarounds to force-overide some of these
-        settings which are inclued in my R Markdown templates, but this can be inelegant.  Some issues aren't fully resolved and are discussed in the <a href=https://github.com/cgrudz/ADA_compliant_teaching_workflow#known-issues" target="blank">Known Issues Section</a>.</li> 
+        settings which are inclued in my R Markdown templates, but this can be inelegant.  Some issues aren't fully resolved and are discussed in the <a href="https://github.com/cgrudz/ADA_compliant_teaching_workflow#known-issues" target="blank">Known Issues Section</a>.</li> 
    <li> Con: Output PDFs through the Pandoc integration don't match the styling of the HTML documents by default, meaning you will have different formatting
         for printed and hosted documents.  For this reason, it is still recommended that you only output your markdown documents to HTML anyway.</li>
   </ul> 
