@@ -247,7 +247,7 @@ in my R Markdown templates.  This has the effect of enforcing notebook size marg
 
 #### R Presentation Issues
 
-There are several different presentation mediums within R Markdown, including ioslides, slidy presentations, and .rpres documents which integrate reveal.j.
+There are several different presentation mediums within R Markdown, including ioslides, slidy presentations, and .rpres documents which integrate reveal.js.
 My experience so far is with usings .rpres documents because I like the features of reveal.js, however, there are various issues especially as it seems like
 the yaml for rpres is more limited by default than with other R Markdown documents.  I will outline the issues encountered so far and what solutions, if any,
 I have been able to find.
