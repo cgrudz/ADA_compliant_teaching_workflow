@@ -233,13 +233,33 @@ You can contact me directly at cgrudzien AT unr DOT edu and I will try to assist
 ### Known Issues
 
 #### R Markdown issues
-<ol>
-  <li> R Markdown yaml frontmatter will import custom stylesheets, however, it will not respect page size settings.  For this reason, I have incuded additional frontmatter with 
+
+
+##### Notebook size documents in R Markdown
+R Markdown yaml frontmatter will import custom stylesheets, however, it will not respect page size settings.  For this reason, I have incuded additional frontmatter with 
 ```yaml
 includes:
       in_header: ../styles/notebook.html
 ```
-  in my R Markdown templates.  This has the effect of enforcing notebook size margins within these documents, by including CSS for the body element which is usually neglected by the yaml.</li>
-</ol>
+in my R Markdown templates.  This has the effect of enforcing notebook size margins within these documents, by including CSS for the body element which is usually neglected by the yaml.
+
+
 
 #### R Presentation Issues
+
+There are several different presentation mediums within R Markdown, including ioslides, slidy presentations, and .rpres documents which integrate reveal.j.
+My experience so far is with usings .rpres documents because I like the features of reveal.js, however, there are various issues especially as it seems like
+the yaml for rpres is more limited by default than with other R Markdown documents.  I will outline the issues encountered so far and what solutions, if any,
+I have been able to find.
+
+#### Non-local Mathjax in Rpres html docs
+By default, when you export an HMTL document from a ```template.rpres``` document, it will include a folder called ```template_files```.  This includes an entire installation of Mathjax
+in the local directory (V. 2.6.1) so you can host and load the presentation without internet connection.  However, for folks like myself who want to host their presentations on their website,
+this comes with the unnecessary burdent of hosting a local copy of Mathjax for every presentation.  Moreover, rpres yaml options do not respect setting a Mathjax link externally.
+One option is to go through each HTML output file and manually and resetting the Mathjax source, but this is a frustrating option for many folks.  The workaround I have found is to
+include __before the yaml frontmatter__ the following lines,
+
+```html
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+````
