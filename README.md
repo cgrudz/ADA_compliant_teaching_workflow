@@ -255,14 +255,17 @@ I have been able to find.
 #### Non-local Mathjax in Rpres html docs
 By default, when you export an HMTL document from a ```template.rpres``` document, it will include a folder called ```template_files```.  This includes an entire installation of Mathjax
 in the local directory (V. 2.6.1) so you can host and load the presentation without internet connection.  However, for folks like myself who want to host their presentations on their website,
-this comes with the unnecessary burdent of hosting a local copy of Mathjax for every presentation.  Moreover, rpres yaml options do not respect setting a Mathjax link externally.
-One option is to go through each HTML output file and manually and resetting the Mathjax source, but this is a frustrating option for many folks.  The workaround I have found is to
+this comes with the unnecessary burden of hosting a local copy of Mathjax for every presentation, or otherwise keeping a local copy of Mathjax and editing the output HTML of every
+document manually to link to the local copy.  Moreover, rpres yaml options do not respect setting a Mathjax link externally.
+One option is to go through each  HTML output file and manually and resetting the Mathjax source, but this is a frustrating option for many folks.  The workaround I have found is to
 include __before the yaml frontmatter__ the following lines,
 
 ```html
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-````
+```` 
+The primary issue, however, is that developing locally in R Studio will still use an older version of Mathjax which will render differently than the current version.  When linked "live" online to
+the current version of Mathjax, the output rendering of the slide can be quite different due to the differences in versions.
 
 #### Splash screen has non-accessible color contrast levels
 This is an issue where, by default, the splash screen uses contrast levels that are non-accessible to the visually impaired.  The issue can be relieved by resetting the reveal.js
