@@ -135,6 +135,12 @@ table.minimalistBlack tfoot td {
     float:left;
 }
 
+.long_answer_div{
+    width:100%;
+    height:3in;
+    float:left;
+}
+
 /* Define page breaks in document for printing purposes
  * Include the following line
  * <div class="pagebreak"> </div>
