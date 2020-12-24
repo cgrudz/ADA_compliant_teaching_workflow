@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Example_quiz_with_solutions</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" type="text/javascript"></script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <style type="text/css">
+
+  /*
+   * Copyright 2019 Colin Grudzien <cgrudzien@unr.edu>
+   *
+   * Based on CSS developed orignally by 
+   *
+   * Christophe-Marie Duquesne <chmd@chmd.fr>
+   *
+   * CSS for making functional teaching documents with accessible mathematics
+   * with Markdown/ pandoc. Inspired by moderncv.
+   * 
+   * This CSS document is delivered to you under the CC BY-SA 3.0 License.
+   * https://creativecommons.org/licenses/by-sa/3.0/deed.en_US
+   */
+
+
+
+
+  /* Whole document - standard notebook size and margins */
+  body {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      max-width: 8.5in;
+      margin: auto;
+      background: #FFFFFF;
+      padding: 1in 1in 1in 1in;
+  }
+
+  /* Title of the document */
+  h1 {
+      font-size: 50px;
+      color: #000000;
+      text-align:center;
+      margin-bottom:15px;
+  }
+
+  h1+p {
+      /*subtitle*/
+      color: #000000;
+      font-size: 20px;
+      line-height: 2em;
+      margin-top: 0.5em;
+      margin-bottom: 0em !important;
+      text-align: center;
+      font-weight: bold;
+  }
+
+  /* Subheadings */
+  h2 {
+      color: #000000;
+  }
+
+  /* Definitions */
+  dt {
+      float: left;
+      clear: left;
+      width: 17%;
+      /*font-weight: bold;*/
+  }
+  dd {
+      margin-left: 17%;
+  }
+  p {
+      margin-top:0;
+      margin-bottom:7px;
+  }
+
+  /* Blockquotes */
+  blockquote {
+      text-align: left; 
+  }
+
+  /* Links */
+  a {
+      text-decoration: none;
+      color: #1D5996;
+  }
+  a:hover, a:active {
+      background-color: #1D5996;
+      color: #FFFFFF;
+      text-decoration: none;
+      text-shadow: 1px 1px 1px #333;
+  }
+
+  /* Horizontal separators */
+  hr {
+      color: #A6A6A6;
+  }
+
+  table {
+      width: 100%;
+  	border-collapse:collapse;
+  	border-spacing:0;
+  	display:table
+  }
+
+  table.minimalistBlack {
+    border: 3px solid #000000;
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+  }
+  table.minimalistBlack td, table.minimalistBlack th {
+    padding: 5px 4px;
+  }
+  table.minimalistBlack tbody td {
+    font-size: 15px;
+  }
+  table.minimalistBlack thead {
+    background: #CFCFCF;
+    background: -moz-linear-gradient(top, #dbdbdb 0%, #d3d3d3 66%, #CFCFCF 100%);
+    background: -webkit-linear-gradient(top, #dbdbdb 0%, #d3d3d3 66%, #CFCFCF 100%);
+    background: linear-gradient(to bottom, #dbdbdb 0%, #d3d3d3 66%, #CFCFCF 100%);
+    border-bottom: 3px solid #000000;
+  }
+  table.minimalistBlack thead th {
+    font-size: 15px;
+    font-weight: bold;
+    color: #000000;
+    text-align: left;
+  }
+  table.minimalistBlack tfoot {
+    font-size: 14px;
+    font-weight: bold;
+    color: #000000;
+    border-top: 3px solid #000000;
+  }
+  table.minimalistBlack tfoot td {
+    font-size: 14px;
+  }
+
+  /* Make div for blank space for answers in between questions 
+   * Include your own necessary amount of blank space in the 
+   * height variable.*/
+  .answer {
+      width:100%;
+      height:2in;
+      float:left;
+  }
+
+  .long_answer {
+      width:100%;
+      height:3in;
+      float:left;
+  }
+
+  /* Define page breaks in document for printing purposes
+   * Include the following line
+   * <div class="pagebreak"> </div>
+   * in order to initiate page breaks for document printing */
+  @media print {
+      .pagebreak { 
+      page-break-before: always; 
+      padding-top:1in;
+  } 
+  }
+
+  div.solutions * {
+      color:#000099;
+  }
+
+  section.solutions * {
+      color:#000099;
+  }
+
+
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Example Quiz with Solutions</h1>
+</header>
+<h2 id="instructions">Instructions</h2>
+<blockquote>
+<p>Write your name at the top right. You are to work on this quiz alone without any help from any other resource <b>except for a single <span class="math inline">\(8.5 \times 11\)</span> inch page of handwritten notes</b>.<br />
+This quiz will be ungraded but must be handed in for attendance.</p>
+</blockquote>
+<h2 id="problems">Problems:</h2>
+<h3 id="problem-1">Problem 1:</h3>
+<p>In the figure below is a plot of the residuals versus the fitted values for some linear model. Which of our usual assumptions may not hold, and what does this imply for the linear model? What test can we use to diagnose the issue?</p>
+<p><img src="hetero.png" style="width:40.0%" alt="Image of residuals versus fitted values with non-constant variance in the residuals over cases." /><br />
+</p>
+<section id="solution" class="solutions">
+<h4>Solution:</h4>
+<p>Here we see an indication of non-constant variance in the errors. This is a violation of the Gauss-Markov theorem though, we note, this doesn’t imply that the estimated parameters by ordinary least squares will be biased. On the other hand, the estimates of the standard errors will be biased and thus our uncertainty quantification will be biased. We can use an F-test for variances to test for this kind of behavior in the residuals.</p>
+</section>
+<h3 id="problem-2">Problem 2:</h3>
+<p>In the figure below is a plot of the residuals versus the fitted values for some linear model. Which of our usual assumptions may not hold, and what does this imply for the linear model?</p>
+<img src="nonlinear.png" style="width:40.0%" alt="Image of residuals versus fitted values with nonlinear behavior in the residuals over cases." /><br />
+
+<section id="solution-1" class="solutions">
+<h4>Solution:</h4>
+<p>Here, the the assumption of the uncorrelated errors is in question, as well as the structure of the model itself, i.e., <span class="math display">\[\mathbf{Y}= \mathbf{X} \boldsymbol{\beta} + \boldsymbol{\epsilon}.\]</span> Once again, if the assumptions on the errors are not satisfied, we can expect our uncertainty quantification to be biased. Moreover, if the structure of the model does not hold, this has many consequences for the reliability of our model. If the model structure is not accurate, this will mean all estimates will have bias in ways that are difficult to quantify.</p>
+</section>
+</body>
+</html>

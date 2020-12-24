@@ -15,10 +15,10 @@ DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
 THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. SEE THE <a href="LICENSE" target="blank">LICENCE</a> FOR FUTHER DETAILS.
 </blockquote>
 
-Thanks to <a href="https://www.unr.edu/tlt" target="blank">Don Massie</a> and <a href="https://wolfweb.unr.edu/~asarantsev/" target="blank">Andrey Sarantsev</a>
-for investigating the <a href="https://wolfweb.unr.edu/~asarantsev/accessdetail.html" target="blank">primary issues and various solutions</a> for accessible math documents.
+Thanks to <a href="https://www.unr.edu/tlt" target="blank">Don Massie</a> and <a href="https://asarantsev.github.io/WebArchive/" target="blank">Andrey Sarantsev</a>
+for investigating the primary issues and various solutions for accessible math documents.
 
-To summarize one of the main conclusions:
+To summarize one of their main conclusions:
 <blockquote>
 We described a way to make LaTeX accessible for visually impaired students via conversion through Pandoc to HTML-MathJax. 
 We discussed in detail that Pandoc does not convert everything automatically, and we need to do some work manually. 
@@ -43,7 +43,7 @@ This workflow should satisfy the following requirements:
 
 My solution has been to largely adopt Markdown and R Markdown as my basis for typesetting.  Mathematical equations are rendered by
 <a href="https://www.mathjax.org/" target="blank">MathJax</a> in HTML which is screen reader accessible. 
-Writing all my teaching documents in a Markdown/ HTML native environment  has the benefit of not needing to make multiple conversions, 
+Writing all my teaching documents in a Markdown / HTML native environment  has the benefit of not needing to make multiple conversions, 
 and relying on a single style sheet for formatting.  Although it is possible with Pandoc to create PDF outputs and HTML outputs simultaneously from the same Markdown document,
 this also requires editting and maintaining multiple stylesheets for the different output formats.
 
@@ -57,19 +57,19 @@ the work flow, many aspects of the CSS and the Pandoc makefile.  Please see the 
 I can recommend two ways to approach this:
 
 <ol>
-  <li>If you prefer to work within a graphical environment, use <a href="https://www.rstudio.com/" target="blank">R Studio</a> 
-  and approach this within an <a href="https://bookdown.org/yihui/rmarkdown/">RMarkdown framework</a>.  This has the following pros and cons:</li>
+  <li>Use <a href="https://www.rstudio.com/" target="blank">R Studio</a> and approach this within an <a href="https://bookdown.org/yihui/rmarkdown/">RMarkdown framework</a>.  
+  This has the following pros and cons:</li>
   <ul>
    <li> Pro: R Studio has integration with Pandoc, which means that you can output your markdown files into any format you want.</li>
    <li> Pro: R Studio is also highly user-friendly, and includes document previews and automatic compiling of documents through the graphical interface.</li>
    <li> Pro: There are pre-made templates within the R Studio environment for different types of documents.</li> 
    <li> Pro: R Studio has installers for all operating systems and should be compatible with most configurations without any extra work.</li>
-   <li> Con: Not all of the R Studio templates produce accessible HTML documents by default, and/ or satisfy the above goals. In response, 
-        I have found several workarounds to force-overide some of these issues. I have filed formal bug reports with R Studio for issues I have noticed,
-        but I am not contributing to the project directly, only providing temporary workarounds.
+   <li> Neutral: Not all of the R Studio templates produce accessible HTML documents by default, and/ or satisfy the above goals. In response, the templates included in
+        this repository seek to eliminate these issues with different style settings. I have filed formal bug reports with R Studio for issues I have noticed,
+        but I am not contributing to the project directly, only providing workarounds.
         Some issues aren't fully resolved and are discussed in the <a href="https://github.com/cgrudz/ADA_compliant_teaching_workflow#known-issues" target="blank">Known Issues Section</a>.</li> 
    <li> Con: Output PDFs through the Pandoc integration don't match the styling of the HTML documents by default, meaning you will have different formatting
-        for printed and hosted documents.  For this reason, it is still recommended that you only output your Markdown documents to HTML anyway.</li>
+        for printed and hosted documents.  For this reason, it is still recommended that you only output your Markdown documents to HTML and print to PDF with a browser.</li>
   </ul> 
   <li>If you are familiar with command line, you can use my templates and "Makefile" for Pandoc with any editor you like. This has the following
       pros and cons:</li>
@@ -183,7 +183,7 @@ in <a href="https://github.com/cgrudz/ADA_compliant_teaching_workflow#known-issu
 
 ##### How to use templates
 
-You can edit the default template using standard Markdown.  There are additional settings that I have included to deal with issues around accessibility.  You can preview 
+You can edit the default templates using standard Markdown.  There are additional settings that I have included to deal with issues around accessibility.  You can preview 
 the document in the R Studio viewer, and when you want to make a persistent copy, you can save this to HTML.  Note, when you create a copy of the presentation, it will
 save a local copy of Mathjax for the presentation to be used when offline.  This is a handy feature, except for hosting documents online where multiple copies of Mathjax
 will quickly eat up hosting space. If you need to host the document online, it is recommended to keep a local copy of Mathjax and link to this directly.  You can also
@@ -214,13 +214,17 @@ sudo dpkg -i pandoc-2.2.1-1-amd64.deb
 
 #### Q: How do I create my own materials with this workflow?
 
-Write new documents or edit existing templates in the ".md" file type within the IN_DIR.  Use the make command as above to export these
-into the HTML pages.  You can also use templates of the ".rmd" file type for R Markdown specifically, which can be compiled with R Studio.
+To make static documents, either:
+  * Edit ".rmd" templates in the R_markdown directory with R Studio and compile to HTML with knitr.
+  * From command line, edit ".md" templates within the IN_DIR (markdown) directory.  Use the make command as above to export these into the HTML pages to the OUT_DIR (output) directory. 
 
-#### Q: What is ".md" file type?
+To make presentations, edit the presentation template in the R_presentations directory.
 
-This is <a href="https://www.markdownguide.org/getting-started" target="blank">Markdown</a>, a popular Markup typsetting language. You
-can think of this similarly to LaTeX, but based around web page commands and simplified HTML.
+#### Q: What are the ".rmd" and ".md" file types?
+
+This are <a href="https://www.markdownguide.org/getting-started" target="blank">Markdown</a> files, a popular Markup typsetting language. You
+can think of this similarly to LaTeX, but based around web page commands and simplified HTML. The ".rmd" is the R flavored markdown, with additional
+features to use with the R language.
 
 
 #### Q: How do I write math equations in the documents?
@@ -259,14 +263,14 @@ approximating it.
 
 #### Q: How do I make space in between elements to give, e.g., problems with room to hand fill answers in the printed sheet?
 
-Include an "answers_div" as follows
+Include an "answer" div as follows
 
 ```html
-<div class="answer_div"></div>
+<div class="answer"></div>
 ```
 
-Generally, you can set many different sizes of blank space either manually or with CSS.  The "answers_div" class is in the base.css
-under the styles directory which is set to give 2 inches of blank space.  
+Generally, you can set many different sizes of blank space either manually or with CSS.  The "answer" class is in the base.css
+under the styles directory which is set to give 2 inches of blank space.  The "long_answer" class includes 3 inches.
 You can edit this yourself if you need different spacing, or create different classes of divs for the same purpose.
 
 #### Q: How do I highlight portions of text in solution keys, e.g., to show the solution after the problem?

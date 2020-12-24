@@ -22,6 +22,12 @@ height: 1080
 <h2 style="text-align:left"> Instructions:</h2>
 <p style='text-align:left'>Use the left and right arrow keys to navigate the presentation forward and backward respectively.  You can also use the arrows at the bottom right of the screen to navigate with a mouse.<br></p>
 
+<blockquote>
+FAIR USE ACT DISCLAIMER:</br>
+This site is for educational purposes only.  This website may contain copyrighted material, the use of which has not been specifically authorized by the copyright holders. The material is made available on this website as a way to advance teaching, and copyright-protected materials are used to the extent necessary to make this class function in a distance learning environment.  The Fair Use Copyright Disclaimer is under section 107 of the Copyright Act of 1976, allowance is made for “fair use” for purposes such as criticism, comment, news reporting, teaching, scholarship, education and research.
+</blockquote>
+
+
 ========================================================
 
 ## Outline
@@ -33,6 +39,7 @@ height: 1080
   * What is the html below this frontmatter
   * How to write math
   * How to write code
+  * Formatting images and text together
 
 ========================================================
 
@@ -87,6 +94,8 @@ unless you feel comfortable editing CSS.
 
 * I also include instructions in the opening slide at the suggestion of students who didn't find it immediately obvious how to navigate the presentation.
 
+* Likewise, for sharing my teaching materials I keep a fair use copyright statement in the opening slide.
+
 
 ========================================================
 
@@ -97,3 +106,39 @@ unless you feel comfortable editing CSS.
   $$e^{i\pi} +1 = 0$$
 
 * Also, three dashes can be used to escape into a code chunk.  You can specify different types of code as is discussed in other documentation.
+
+```{r}
+exp(1i * pi) + 1
+```
+
+
+========================================================
+### Image formatting
+
+<div style="float:left; width:40%">
+<ul>
+<li> I typically format images in my slides with a mix of divs to place the image, and to place the text in relation to the image.</li>
+</ul>
+</div>
+<div style="float:right; width:50%" class="fragment">
+<img src="./images/Trapezium2.gif" style="width:100%" alt="Trapezoid rule.">
+<p style="text-align:center">
+<a href="https://commons.wikimedia.org/wiki/File:Trapezium2.gif" title="via Wikimedia Commons">Mkwadee at English Wikipedia</a> / <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA</a>
+</p>
+</div>
+<div style="float:left; width:40%">
+<ul>
+  <li>However, when using these divs, you can no longer use plain markdown syntax and you need to utilize full HTML to handle the rich formatting.</li>
+  <li>When you become comfortable with div placements, this offers a number of ways to format images and text together for rich slides.</li>
+  <li>Remember to include relevant alt text with these images so that the slides still remain accessible.</li>
+</ul>
+</div>
+<div style="float:left; width:100%">
+<ul>
+  <li>You can use these examples to find different ways to mix images and text together.</li>
+</ul>
+</div>
+
+
+
+
